@@ -8,7 +8,7 @@ const Card = () => {
   return (
     <Container sx={{display:"flex", flexDirection:"column",justifyContent: "space-between", gap:"20px"}}>
       <div className="card">
-        <img id="profilePicture" src="../../public/pp.jpg" alt="profile picture" />
+        <img id="profilePicture" src="/pp.jpg" alt="profile picture" />
 
         <p className="cardTitle">
           Yahya Ilham Riyadi
