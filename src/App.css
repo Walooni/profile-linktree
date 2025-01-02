@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+body {
+    background-color: rgb(25, 23, 31);
+}
+
+#containerContent {
+    display: flex;
+    height: 120vh;
+    /* width: 100%; */
+    align-items: center;
+}

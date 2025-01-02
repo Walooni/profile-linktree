@@ -1,0 +1,49 @@
+.iconList {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 100px;
+}
+
+.iconContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    z-index: 999;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.iconContainer::after, .iconContainer::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red,purple, blue, green, yellow, orange, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -5;
+    padding: 3px;
+    border-radius: 50%;
+    /* animation: 10s spin linear infinite;
+    animation-play-state: paused; */
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+.iconContainer::before {
+    filter: blur(1.5rem);
+}
+.iconContainer:hover::after {
+    opacity: 0.6;
+}
+.card:hover::before{
+    opacity: 1;
+}
